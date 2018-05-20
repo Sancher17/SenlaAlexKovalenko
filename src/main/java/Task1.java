@@ -8,11 +8,6 @@ public class Task1 {
         Scanner in = new Scanner(System.in);
         String pattern = "[-+]?[\\d]+([\\d]+)?";
 
-//        while (!in.hasNext(pattern)) {
-//            System.out.println("Не корректные данные");
-//            enterNumber();
-//            in = new Scanner(System.in);
-//
         while (!in.hasNext(pattern)) {
             System.out.println("Не корректные данные");
             enterNumber();
