@@ -10,7 +10,7 @@ public class Task4 {
         Scanner in = new Scanner(System.in);
 
         List<String> list = Arrays.asList(in.nextLine().split("[,]*\\s"));
-        System.out.println("Количество слов - " + String.valueOf(list.size()));
+        System.out.println("Количество слов - " + String.valueOf(list.size())+"\n");
         list.sort(String::compareToIgnoreCase);
 
         for (String words : list) {

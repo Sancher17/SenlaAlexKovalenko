@@ -7,6 +7,7 @@ public class Task8 {
         System.out.println("Введити длину последовательности, но не более 100, нажмите enter");
         Scanner in = new Scanner(System.in);
         int length = Integer.valueOf(in.nextLine());
+//        int [] arrayTest = {3, 33, 55, 47, 101, 404, 75};
 
         if (length <= 100) {
             int[] array = new int[length];

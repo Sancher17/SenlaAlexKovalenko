@@ -21,7 +21,7 @@ public class Task5 {
                 count++;
             }
         }
-        System.out.println("Слово <" + word + "> используется " + count + " раз");
+        System.out.println("Слово <" + word + "> используется раз: " + count);
         text.close();
         inWord.close();
     }

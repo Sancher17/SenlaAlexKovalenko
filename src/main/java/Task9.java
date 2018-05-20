@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Task9 {
@@ -8,16 +11,21 @@ public class Task9 {
         Scanner in = new Scanner(System.in);
         int length = Integer.valueOf(in.nextLine());
 
-        int[] array = new int[length];
+//        List <Integer> list = Arrays.asList(3, 22, 55, 47, 101, 404, 75); //for test
+        ArrayList<Integer> list = new ArrayList<>();
         int sum = 0;
 
-        for (int anArray : array) {
-            if (anArray % 2 == 0) {
-                sum += anArray;
-                System.out.print(anArray + ", ");
+        if (list.size() >= length) {
+            for (int i = 0; i < length; i++) {
+                if (list.get(i) % 2 == 0) {
+                    sum += list.get(i);
+                    System.out.print(list.get(i) + " ");
+                }
             }
+            System.out.println("\nСумма четных чисел: " + sum);
+        }else{
+            System.out.println("Длина последовательности короче ввиденного числа");
         }
-        System.out.println("\nСумма четных чисел: " + sum);
     }
 }
 
